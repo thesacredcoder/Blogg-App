@@ -24,10 +24,10 @@ app.get("/", (req, res) => {
         if(err){
             console.log("ERROR");
         } else {
-            res.render("index", {blogs: blogs})
+            res.render("index", {blogs: blogs});   // Better : res.render("index", {blogs})
         }
     })
-    res.render("index")
+    //res.render("index");
 });
 
 
